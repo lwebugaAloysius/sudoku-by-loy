@@ -1,0 +1,57 @@
+.cell {
+  border: 0.3px solid black;
+  padding: 1rem;
+  background-color: var(--board-cells-num-pad-digits-bg);
+  text-align: center;
+  font-weight: 600;
+  display: grid;
+  place-content: center;
+}
+/* .cell {
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+
+  display: grid;
+  place-items: center;
+
+  background-color: var(--board-cells-num-pad-digits-bg);
+  border: 0.3px solid black;
+  text-align: center;
+  font-weight: 600;
+  font-size: clamp(0.8rem, 4vw, 1.1rem);
+} */
+@media (max-width: 867px) {
+  .cell {
+    padding: 0.8rem;
+  }
+}
+
+.thick-right {
+  border-right: 3px solid black;
+}
+.thick-top {
+  border-top: 3px solid black;
+}
+
+.active-cell-relative {
+  background-color: var(--active-cell-relatives);
+}
+
+.same-value-as-active-cell {
+  background-color: var(--del-solve-bg);
+}
+
+.is-current-active-cell {
+  color: white;
+}
+.is-conflicting {
+  background-color: var(--conflicting-cell-bg);
+}
+.is-wrong-move {
+  background-color: var(--wrong-move-bg);
+}
+.is-current-solver-cell {
+  background-color: var(--solver-cell);
+  color: white;
+}

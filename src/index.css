@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("/fonts/JetBrains-Mono/JetBrainsMono-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("/fonts/Space-Grotesk/SpaceGrotesk-VariableFont_wght.ttf");
+}
+
+:root {
+  --main-bg: hsl(0, 0%, 90%);
+  --theme-board-bg: hsl(0, 5%, 81%);
+  --board-num-clr: hs1(60, 10%, 19%);
+  --del-solve-bg: hsl(185, 42%, 37%);
+  --del-solve-shadow: 0 4px hsl(185, 58%, 25%);
+  --del-solve-hover-bg: hsl(185, 42%, 60%);
+  --reset-new-game-bg: hsl(25, 98%, 40%);
+  --reset-new-game-hover-bg: hsl(25, 98%, 60%);
+  --rest-new-game-shadow: 0 4px hsl(25, 99%, 27%);
+  --board-cells-num-pad-digits-bg: hsl(45, 7%, 89%);
+  --num-pad-digits-shadow: 0 4px hsl(35, 11%, 67%);
+  --num-pad-digits-shadow-clr: hsl(35, 11%, 67%);
+  --active-cell-relatives: hsl(45, 7%, 100%);
+  --keys-hover-bg: hsl(45, 7%, 100%);
+  --conflicting-cell-bg: hsl(6, 63%, 50%);
+  --wrong-move-bg: hsl(6, 63%, 60%);
+  --solver-cell: hsl(225, 21%, 49%);
+  --body-clr: hsl(60, 10%, 19%);
+
+  --primary-font: SpaceGrotesk;
+  --secondary-font: JetBrainsMono;
+}
+
+[data-theme="dark"] {
+  --main-bg: hsl(268, 71%, 12%);
+  --theme-board-bg: hsla(268, 74%, 9%, 0.56);
+  --board-num-clr: hs1(52, 100%, 62%);
+  --del-solve-bg: hsl(281, 89%, 26%);
+  --del-solve-shadow: 0 4px hsl(285, 91%, 52%);
+  --del-solve-hover-bg: hsl(281, 89%, 40%);
+  --reset-new-game-bg: hsl(176, 100%, 44%);
+  --reset-new-game-hover-bg: hsl(176, 100%, 80%);
+  --rest-new-game-shadow: 0 4px hsl(177, 92%, 70%);
+  --board-cells-num-pad-digits-bg: hsl(268, 47%, 21%);
+  --num-pad-digits-shadow: 0 4px hsl(290, 70%, 36%);
+  --num-pad-digits-shadow-clr: hsl(290, 70%, 36%);
+  --active-cell-relatives: hsl(268, 47%, 50%);
+  --keys-hover-bg: hsl(268, 47%, 50%);
+  --body-clr: hsl(52, 100%, 62%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--main-bg);
+  color: var(--body-clr);
+  transition: all 150ms ease-in-out;
+  font-family: var(--primary-font);
+}
+
+button {
+  font-family: var(--primary-font);
+}
+
+body > * {
+  transition: all 150ms ease-in-out;
+}

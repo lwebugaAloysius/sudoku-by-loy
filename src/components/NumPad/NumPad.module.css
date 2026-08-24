@@ -1,0 +1,83 @@
+.num-pad {
+  background-color: var(--theme-board-bg);
+  padding: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.num-pad-btn {
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  border: none;
+  cursor: pointer;
+  /* outline: 1px solid rgb(197, 195, 195); */
+  background-color: var(--board-cells-num-pad-digits-bg);
+  box-shadow: var(--num-pad-digits-shadow);
+  color: var(--body-clr);
+  font-family: var(--primary-font);
+}
+
+.num-pad-digit {
+  font-family: var(--secondary-font);
+  font-weight: 900;
+}
+.num-pad-btn:hover {
+  background-color: var(--keys-hover-bg);
+}
+
+.del-btn,
+.solve-btn {
+  background-color: var(--del-solve-bg);
+  box-shadow: var(--del-solve-shadow);
+  color: white;
+}
+.del-btn:hover {
+  background-color: var(--del-solve-hover-bg);
+}
+.solve-btn:hover {
+  background-color: var(--del-solve-hover-bg);
+}
+
+.new-game-btn {
+  grid-column: 1 /-1;
+}
+
+.restart-btn,
+.new-game-btn {
+  color: white;
+  background-color: var(--reset-new-game-bg);
+  box-shadow: var(--rest-new-game-shadow);
+}
+
+.restart-btn:hover {
+  background-color: var(--reset-new-game-hover-bg);
+}
+.new-game-btn:hover {
+  background-color: var(--reset-new-game-hover-bg);
+}
+
+/* @media (max-width: 867px) {
+  .num-pad {
+    grid-template-columns: repeat(4, 80px);
+  }
+  .num-pad-btn {
+    padding: 0.5rem;
+  }
+} */
+
+@media (max-width: 867px) {
+  .num-pad {
+    width: 100%;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.6rem;
+  }
+
+  .num-pad-btn {
+    min-width: 0;
+    padding: 0.7rem 0.4rem;
+  }
+}
