@@ -1,4 +1,4 @@
-# Sodoku By Loy
+# Sudoku By Loy
 
 A Sudoku game built with React and Vite, featuring a hand-written backtracking
 solver (with an animated solve step-through), a unique-solution puzzle
@@ -11,9 +11,12 @@ and then measure how much smarter search ordering (MRV) speeds it up. That's
 the part of this README worth reading closely.
 
 <p align="center">
-  <img src="public/desktop-light-theme.png" alt="Sodoku By Loy — light theme" width="46%">
+  <img src="public\screenshots\desktop-light-theme.png" alt="Sodoku By Loy — desktop light theme" width="46%">
   &nbsp;&nbsp;
-  <img src="public/desktop-dark-theme.png" alt="Sodoku By Loy — dark theme" width="46%">
+  <img src="public\screenshots\desktop-dark-theme.png" alt="Sodoku By Loy — desktop dark theme" width="46%">
+  <img src="public\screenshots\mobile-light-theme.png" alt="Sodoku By Loy — mobile light theme" width="46%">
+  &nbsp;&nbsp;
+  <img src="public\screenshots\mobile-dark-theme.png" alt="Sodoku By Loy — mobile dark theme" width="46%">
 </p>
 
 ---
